@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context="com.github.florent37.slidr.MainActivity">
+
+        <bar.level.lln.Slidr
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:slidr_region_leftColor="@color/colorAccent"
+            app:slidr_regions_centerText="false" />
+
+
+        <bar.level.lln.Slidr
+            android:id="@+id/slideure"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:slidr_region_leftColor="@color/colorPrimary"
+            app:slidr_step_colorizeAfterLast="true" />
+
+
+        <bar.level.lln.Slidr
+            android:id="@+id/slideure_regions"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:slidr_draw_bubble="false"
+            app:slidr_region_leftColor="@color/colorAccent"
+            app:slidr_region_rightColor="@color/colorPrimary"
+            app:slidr_regions="true"
+            app:slidr_regions_centerText="true"
+            app:slidr_regions_textFollowRegionColor="true" />
+
+
+        <bar.level.lln.Slidr
+            android:id="@+id/slideure2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:slidr_barHeight="10dp"
+            app:slidr_step_colorizeAfterLast="true"
+            app:slidr_textBottom_visible="false"
+            app:slidr_textTop_visible="false" />
+
+        <Button
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change max" />
+
+        <Button
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change current" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+</ScrollView>
